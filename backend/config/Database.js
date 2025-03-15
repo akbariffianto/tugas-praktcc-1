@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 
-const db = new Sequelize("notes", "root", " ", {
-    host: "localhost",
+const db = new Sequelize("notes", "root", "", {
+    host: "34.135.240.157",
     dialect: "mysql",
     timezone: "+07:00", // Set timezone ke GMT+7
     dialectOptions: {

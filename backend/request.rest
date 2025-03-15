@@ -1,37 +1,33 @@
 ##
-GET http://localhost:5000/notes 
+GET http://34.168.162.83:5000/notes 
 
 ###
-POST http://localhost:5000/add-notes 
+POST http://localhost:5000/notes/add-notes
 Content-Type: application/json
 
 {
-    "judul" : "ini apa judul 3",
-    "deskripsi" : "ini apa deskripsi",
-    "kategori": "keuangan",
-    "tanggal_dibuat": " ",
-    "tanggal_diperbarui": " "
+    "judul": "Makan",
+    "deskripsi": "makan bareng keluarga",
+    "kategori": "mkan-makan",
+    "tanggal_dibuat": "",
+    "tanggal_diperbarui": ""
 }
 
+
 ### 
-PUT http://localhost:5000/update-notes/1
+PUT http://localhost:5000/notes/update-notes/10
 
 {
-    "judul" : "ini judul",
-    "deskripsi" : "iniiiii deskripsi",
-    "kategori": "keuangan",
+    "deskripsi" : "makan bareng keluarga besar",
 }
 
 ###
-DELETE http://localhost:5000/delete-notes/2
+DELETE http://localhost:5000/notes/delete-notes/10
 
+###
+POST https://backend-13926268988.us-central1.run.app/add-user
+Content-Type: application/json
 
-# PATCH http://localhost:5000/users/99 
-# Content-Type: application/json
-
-# {
-#     "name": "Oiaiiio", 
-#     "email": "oiii@gmail.com", 
-#     "password": "7678587",
-#     "role": "jungle"
-# }
+{
+"name": "tes", "email": "tes@tes.com", "gender": "tes"
+}
